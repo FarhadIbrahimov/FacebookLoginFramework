@@ -1,0 +1,4 @@
+stepDefinitions\com\facebook\FacebookTestSteps.class
+pages\com\facebook\FacebookLoginPage.class
+Runners\com\facebook\FacebookRunner.class
+stepDefinitions\com\facebook\Hooks.class

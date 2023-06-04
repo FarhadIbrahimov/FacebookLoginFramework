@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="6.602">
+<testcase classname="Negative test for facebook login functionality" name="Testing incorrect login credentials" time="6.46">
+<failure message="Cannot locate an element using xpath=//a[text()='Find your account and log in.']&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'LENOVO', ip: '192.168.0.13', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_331'&#10;Driver info: driver.version: RemoteWebDriver" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given user navigates to Facebook webpage....................................passed
+When user enters "username" in the username box.............................passed
+And user enters "password" in the password box..............................passed
+And user clicks on login button.............................................passed
+Then user unable to login and receives an error message containing "Find your account and log in.".failed
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: Cannot locate an element using xpath=//a[text()='Find your account and log in.']
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LENOVO', ip: '192.168.0.13', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_331'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy19.getText(Unknown Source)
+	at stepDefinitions.com.facebook.FacebookTestSteps.user_unable_to_login_and_receives_an_error_message_containing(FacebookTestSteps.java:39)
+	at ✽.user unable to login and receives an error message containing "Find your account and log in."(file:///C:/Users/nophe/IdeaProjects/FacebookLogin/src/test/java/features/com/facebook/facebook.feature:9)
+]]></failure>
+</testcase>
+</testsuite>
